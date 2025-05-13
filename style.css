@@ -168,10 +168,6 @@ body {
 }
 
 /* Contact details section */
-section.content ul {
-  list-style: none;
-  padding: 0;
-}
 
 section.content ul li {
   margin-bottom: 10px;
