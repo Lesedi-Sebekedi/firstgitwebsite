@@ -76,7 +76,7 @@ nav {
   animation: slideUp 1s ease forwards;
   opacity: 0;
   transform: translateY(30px);
-  animation-delay: 0.3s;
+  animation-delay: 0.13s;
 }
 
 .hero p {
@@ -86,7 +86,7 @@ nav {
   animation: slideUp 1s ease forwards;
   opacity: 0;
   transform: translateY(30px);
-  animation-delay: 0.6s;
+  animation-delay: 0.16s;
 }
 
 .btn {
@@ -97,7 +97,7 @@ nav {
   cursor: pointer;
   font-weight: 500;
   border-radius: 8px;
-  transition: transform 0.3s ease, background 0.3s ease;
+  transition: transform 0.13s ease, background 0.3s ease;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -111,7 +111,7 @@ nav {
   background: #fff;
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 0.3s ease;
+  transition: transform 0.13s ease;
   z-index: 0;
 }
 
@@ -129,7 +129,7 @@ section.fade-in {
   padding: 60px 20px;
   opacity: 0;
   transform: translateY(20px);
-  transition: all 0.6s ease-out;
+  transition: all 0.16s ease-out;
   padding: 60px 20px;
   max-width: 800px;
   margin: auto;
@@ -152,6 +152,41 @@ section.fade-in.visible {
   opacity: 1;
   transform: translateY(0);
 }
+
+.scroll-fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.18s ease-out, transform 0.8s ease-out;
+}
+
+.scroll-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+body {
+  scroll-behavior: smooth;
+}
+
+/* Contact details section */
+section.content ul {
+  list-style: none;
+  padding: 0;
+}
+
+section.content ul li {
+  margin-bottom: 10px;
+}
+
+section.content a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+section.content a:hover {
+  text-decoration: underline;
+}
+
 
 /* Forms */
 form input, form textarea {
