@@ -6,37 +6,19 @@
   <title>Projects - MySite</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
 </head>
-
-<script>
-    function toggleMenu() {
-    document.getElementById('navMenu').classList.toggle('show');
-  }
-    const fadeInSections = document.querySelectorAll('section.fade-in');
-  
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target); // Only animate once
-        }
-      });
-    }, { threshold: 0.1 });
-  
-    fadeInSections.forEach(section => observer.observe(section));
-</script>
-  
 <body>
   <header>
     <nav>
-        <div class="logo">MySite</div>
-        <div class="nav-toggle" onclick="toggleMenu()">☰</div>
-        <ul class="nav-links" id="navMenu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>      
+      <div class="logo">MySite</div>
+      <div class="nav-toggle" onclick="toggleMenu()">☰</div>
+      <ul class="nav-links" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
   <section class="fade-in">
@@ -44,16 +26,16 @@
     <p>Here's a glimpse at what I’ve been building.</p>
   </section>
 
-  <section class="fade-in" style="padding: 60px 20px; max-width: 800px; margin: auto;">
-    <div style="margin-bottom: 40px;">
+  <section class="fade-in content">
+    <div class="project">
       <h2>Smart Inventory App</h2>
       <p>A full-stack inventory management system using Blazor WebAssembly and ASP.NET Core.</p>
     </div>
-    <div style="margin-bottom: 40px;">
+    <div class="project">
       <h2>Asset Tracker (Electron)</h2>
       <p>Cross-platform desktop app for asset tracking, built with Electron and SQLite.</p>
     </div>
-    <div>
+    <div class="project">
       <h2>Tech Repair CRM</h2>
       <p>A modern CRM designed for computer repair businesses, with ticketing and client tracking.</p>
     </div>
