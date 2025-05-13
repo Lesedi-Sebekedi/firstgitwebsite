@@ -200,21 +200,9 @@ footer {
   }
 }
 
-/* Styling for the technologies list */
-ul {
-  list-style: none;  /* Remove bullet points */
-  padding: 0;
-  display: flex;     /* Make the list items align in a row */
-  flex-wrap: wrap;   /* Allow items to wrap if they overflow */
-  gap: 1.5rem;       /* Space between list items */
-}
-
-ul li {
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: #333;
-  display: inline-block;  /* Makes each item appear in a row */
-  white-space: nowrap;    /* Prevents text from breaking into multiple lines */
+.indented-list {
+  padding-left: 2rem; /* or any desired indentation */
+  list-style-position: inside; /* optional: moves bullet inside padding */
 }
 
 
