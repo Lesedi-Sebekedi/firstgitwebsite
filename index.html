@@ -1,90 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Lesedi | Developer & Tech Specialist</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesedi | Digital Craftsman</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@animxyz/core@0.6.0/dist/animxyz.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="style" href="./css/main.css">
 </head>
-<body>
-  <!-- Header & Navigation -->
-  <header id="header">
-    <nav>
-      <div class="logo animate__animated animate__fadeIn">Lesedi</div>
-      <div class="nav-toggle" onclick="toggleMenu()">☰</div>
-      <ul class="nav-links" id="navMenu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<body class="xyz-in">
+  <!-- Micro-interaction Loader -->
+  <div class="loader">
+    <div class="loader__circle"></div>
+    <div class="loader__circle"></div>
+    <div class="loader__circle"></div>
+  </div>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="floating floating-1"></div>
-    <div class="floating floating-2"></div>
-    <div class="hero-content">
-      <div class="scroll-fade">
-        <h1 class="animate__animated animate__fadeInDown">Hi, I'm <span class="highlight">Lesedi</span></h1>
-        <p class="animate__animated animate__fadeIn animate__delay-1s">I'm a developer, problem-solver, and tech enthusiast. I love building clean, intuitive software that empowers people.</p>
-        <div class="animate__animated animate__fadeIn animate__delay-2s">
-          <a href="projects.html" class="btn">See My Work <i class="fas fa-arrow-right"></i></a>
+  <!-- 3D Navigation System -->
+  <nav class="glass-nav">
+    <div class="nav__logo" data-interactive-logo>
+      <svg viewBox="0 0 100 100">...</svg>
+    </div>
+    <ul class="nav__links">
+      <li><a href="#home" data-magnetic-link>Home</a></li>
+      <li><a href="#work" data-magnetic-link>Work</a></li>
+      <li><a href="#about" data-magnetic-link>About</a></li>
+      <li><a href="#contact" data-magnetic-link>Contact</a></li>
+    </ul>
+    <button class="theme-toggle" aria-label="Toggle theme">
+      <span class="sun"></span>
+      <span class="moon"></span>
+    </button>
+  </nav>
+
+  <!-- Immersive Hero Section -->
+  <section id="home" class="hero xyz-in" xyz="fade down-2 stagger-1">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero__content">
+      <h1 class="hero__title">
+        <span class="text-stroke">Digital</span>
+        <span class="text-gradient">Alchemy</span>
+      </h1>
+      <p class="hero__subtitle">Transforming complex problems into elegant solutions</p>
+      <div class="hero__cta">
+        <button class="btn btn--primary" data-hover-effect>View Portfolio</button>
+        <button class="btn btn--secondary" data-hover-effect>Contact Me</button>
+      </div>
+    </div>
+    <div class="hero__scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- Dynamic About Section -->
+  <section id="about" class="about">
+    <div class="about__visual">
+      <div class="visual__container">
+        <div class="visual__item" data-parallax></div>
+        <div class="visual__item" data-parallax></div>
+      </div>
+    </div>
+    <div class="about__content">
+      <h2 class="section-title">About <span class="text-highlight">Lesedi</span></h2>
+      <div class="tabs">
+        <div class="tabs__header">
+          <button class="tabs__btn active">Bio</button>
+          <button class="tabs__btn">Skills</button>
+          <button class="tabs__btn">Philosophy</button>
+        </div>
+        <div class="tabs__content">
+          <div class="tabs__panel active">...</div>
+          <div class="tabs__panel">...</div>
+          <div class="tabs__panel">...</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- About Me Content -->
-  <section class="content">
-    <div class="scroll-fade">
-      <h2>About Me</h2>
-      <p>I strive to be among the crème de la crème—where excellence isn't a goal, but a standard. I value the freedom of independent work just as much as the synergy of collaboration. Whether I'm leading or supporting, I show up with creativity, clarity, and intention.</p>
-      <p>Grounded, kind, and quietly ambitious—that's how I move. My passion for technology goes beyond development. I aspire to create innovative solutions in the tech repair space. With a focus on customer care, efficiency, and reliability, my goal is to build a bridge between users and technology that ensures every device works seamlessly.</p>
-      <p>I'm constantly learning, adapting, and refining my approach to deliver top-notch repair services that elevate the user experience.</p>
-    </div>
-    
-    <div class="scroll-fade">
-      <h2>What I Do</h2>
-      <p>I specialize in modern full-stack development, from intuitive UIs to efficient backend systems. Whether it's desktop apps, web platforms, or smart systems, I bring ideas to life with code.</p>
-      <p>Beyond development, I also provide expert tech repair services. I strive to deliver solutions that seamlessly integrate technology, focusing on efficiency, reliability, and user satisfaction. Whether it's fixing a device or troubleshooting software, I apply the same meticulous attention to detail to ensure everything works perfectly.</p>
-    </div>
-    
-    <div class="scroll-fade">
-      <h2>Technologies I Work With</h2>
-      <ul class="tech-list">
-          <li><i class="fas fa-laptop-code"></i> Electron & SQLite</li>
-          <li><i class="fas fa-code"></i> Blazor & ASP.NET Core</li>
-          <li><i class="fas fa-database"></i> Entity Framework Core</li>
-          <li><i class="fab fa-html5"></i> HTML, CSS, JavaScript</li>
-          <li><i class="fas fa-tools"></i> Diagnostic Tools & Repair Utilities</li>
-          <li><i class="fas fa-microchip"></i> Hardware Troubleshooting</li>
-      </ul>
-    </div>
-    
-    <div class="scroll-fade">
-      <h2>My Mission</h2>
-      <p>To create solutions that are not just functional, but elegant. I'm passionate about bridging design and development to deliver delightful user experiences.</p>
-      <div class="cta-container">
-        <a href="contact.html" class="btn">Let's Connect <i class="fas fa-paper-plane"></i></a>
+  <!-- Interactive Work Gallery -->
+  <section id="work" class="work">
+    <div class="work__header">
+      <h2 class="section-title">Selected <span class="text-highlight">Projects</span></h2>
+      <div class="filter-controls">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+        <button class="filter-btn" data-filter="design">Design</button>
       </div>
+    </div>
+    <div class="work__grid">
+      <!-- Project items would go here -->
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="social-links">
-      <a href="#"><i class="fab fa-github"></i></a>
-      <a href="#"><i class="fab fa-linkedin"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fas fa-envelope"></i></a>
+  <!-- Experimental Contact Form -->
+  <section id="contact" class="contact">
+    <div class="contact__visual">
+      <div class="particles-js" id="contact-particles"></div>
     </div>
-    <p>© 2025 Lesedi. All rights reserved.</p>
+    <form class="contact__form" netlify>
+      <h2 class="section-title">Get In <span class="text-highlight">Touch</span></h2>
+      <div class="form__group">
+        <input type="text" id="name" required>
+        <label for="name">Name</label>
+        <div class="focus-line"></div>
+      </div>
+      <!-- More form fields -->
+      <button type="submit" class="btn btn--primary btn--animated">
+        <span>Send Message</span>
+        <svg>...</svg>
+      </button>
+    </form>
+  </section>
+
+  <!-- Next-Level Footer -->
+  <footer class="footer">
+    <div class="footer__main">
+      <div class="footer__col">
+        <h3>Lesedi Molefe</h3>
+        <p>Digital craftsman specializing in immersive experiences and functional elegance.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Connect</h4>
+        <div class="social-links">
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2023 Lesedi Molefe. All rights reserved.</p>
+      <div class="footer__links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.11.4/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="./js/main.js" type="module"></script>
 </body>
 </html>
