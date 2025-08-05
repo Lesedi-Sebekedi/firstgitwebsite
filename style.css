@@ -37,6 +37,31 @@
   --motion-accelerated: cubic-bezier(0.3, 0, 1, 1);
 }
 
+.nav-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+  
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--color-light);
+    padding: var(--space-s);
+  }
+  
+  .nav-links.show {
+    display: block;
+  }
+}
+
 /* === Base Styles === */
 body {
   font-family: var(--font-body);
