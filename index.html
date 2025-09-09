@@ -13,7 +13,7 @@
   <header>
     <nav>
       <div class="logo">MySite</div>
-      <div class="nav-toggle" onclick="toggleMenu()">☰</div>
+      <button class="nav-toggle" aria-controls="navMenu" aria-expanded="false" onclick="toggleMenu()">☰</button>
       <ul class="nav-links" id="navMenu">
         <li><a href="index.html">Home</a></li>
         <li><a href="projects.html">Projects</a></li>
@@ -69,12 +69,5 @@
     <p>© 2025 MySite. All rights reserved.</p>
   </footer>
 
-  <script>
-    // Toggle the mobile menu for responsive navigation
-    function toggleMenu() {
-      const navMenu = document.getElementById("navMenu");
-      navMenu.classList.toggle("show");
-    }
-  </script>
 </body>
 </html>

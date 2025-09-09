@@ -12,7 +12,7 @@
   <header>
     <nav>
       <div class="logo">MySite</div>
-      <div class="nav-toggle" onclick="toggleMenu()">☰</div>
+      <button class="nav-toggle" aria-controls="navMenu" aria-expanded="false" onclick="toggleMenu()">☰</button>
       <ul class="nav-links" id="navMenu">
         <li><a href="index.html">Home</a></li>
         <li><a href="projects.html">Projects</a></li>
@@ -23,24 +23,39 @@
 
   <!-- Contact Page Header Section -->
   <section class="fade-in">
-    <h1>Let’s Connect</h1>
+    <h1>Let's Connect</h1>
     <p>Feel free to reach out for collaboration, consulting, or just to say hi.</p>
   </section>
 
   <!-- Contact Form Section -->
   <section class="fade-in content">
-    <form>
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" required />
+    <form id="contactForm">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+        <span class="error-message" id="nameError"></span>
+      </div>
 
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required />
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+        <span class="error-message" id="emailError"></span>
+      </div>
 
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <span class="error-message" id="messageError"></span>
+      </div>
 
       <button type="submit" class="btn">Send</button>
     </form>
+    
+    <!-- Success Message (initially hidden) -->
+    <div id="successMessage" class="success-message">
+      <h3>Thank you for your message!</h3>
+      <p>I'll get back to you as soon as possible.</p>
+    </div>
   </section>
 
   <!-- Contact Details Section -->
@@ -48,7 +63,7 @@
     <h2>Contact Details</h2>
     <p>If you need to reach me directly, here are the best ways:</p>
     <ul>
-      <li><strong>Phone:</strong> <a href="tel:+7679535205">+27 679 535 205</a></li>
+      <li><strong>Phone:</strong> <a href="tel:+27679535205">+27 679 535 205</a></li>
       <li><strong>Email:</strong> <a href="mailto:lesedi.eirenic@gmail.com">lesedi.eirenic@gmail.com</a></li>
       <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/lesedisebekedi" target="_blank">Lesedi Sebekedi</a></li>
       <li><strong>GitHub:</strong> <a href="https://github.com/Lesedi-Sebekedi" target="_blank">github.com</a></li>
