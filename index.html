@@ -1,35 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Lesedi Sebekedi - Full Stack Developer & Tech Repair Specialist. Experienced in Python, JavaScript, Django, React, and modern web technologies.">
-  <meta name="keywords" content="developer, full stack, python, javascript, django, react, tech repair, portfolio">
-  <meta name="author" content="Lesedi Sebekedi">
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://lesedisebekedi.com/">
-  <meta property="og:title" content="Lesedi Sebekedi - Full Stack Developer">
-  <meta property="og:description" content="Full Stack Developer & Tech Repair Specialist Portfolio">
-  <meta property="og:image" content="assets/og-image.jpg">
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://lesedisebekedi.com/">
-  <meta property="twitter:title" content="Lesedi Sebekedi - Full Stack Developer">
-  <meta property="twitter:description" content="Full Stack Developer & Tech Repair Specialist Portfolio">
-  <meta property="twitter:image" content="assets/og-image.jpg">
-
-  <!-- PWA -->
-  <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#000000">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <meta name="apple-mobile-web-app-title" content="Lesedi Portfolio">
-  <link rel="apple-touch-icon" href="assets/icon-192.png">
-
-  <title>Lesedi Sebekedi - Full Stack Developer & Tech Repair Specialist</title>
+  <title>About Me - MySite</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
   <script src="script.js" defer></script>
@@ -38,64 +12,104 @@
   <!-- Header & Navigation -->
   <header>
     <nav>
-      <div class="logo">Lesedi Sebekedi</div>
-      <button class="nav-toggle" aria-controls="navMenu" aria-expanded="false" onclick="toggleMenu()">☰</button>
+      <div class="logo">MySite</div>
+      <div class="nav-toggle" onclick="toggleMenu()">☰</div>
       <ul class="nav-links" id="navMenu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="resume.html">Resume</a></li>
-      <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="scroll-fade">
-      <h1>Hi, I'm Lesedi</h1>
-      <p>I’m a developer, problem-solver, and tech enthusiast. I love building clean, intuitive software that empowers people.</p>
-      <a href="projects.html" class="btn">See My Work</a>
+  <!-- Immersive Hero Section -->
+  <section id="home" class="hero xyz-in" xyz="fade down-2 stagger-1">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero__content">
+      <h1 class="hero__title">
+        <span class="text-stroke">Digital</span>
+        <span class="text-gradient">Alchemy</span>
+      </h1>
+      <p class="hero__subtitle">Transforming complex problems into elegant solutions</p>
+      <div class="hero__cta">
+        <button class="btn btn--primary" data-hover-effect>View Portfolio</button>
+        <button class="btn btn--secondary" data-hover-effect>Contact Me</button>
+      </div>
     </div>
-    
+    <div class="hero__scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-arrow"></div>
+    </div>
   </section>
 
-  <!-- About Me Content -->
-  <section class="fade-in content">
-    <div class="scroll-fade">
-      <h2>About Me</h2>
-    <p>I strive to be among the crème de la crème—where excellence isn’t a goal, but a standard. I value the freedom of independent work just as much as the synergy of collaboration. Whether I'm leading or supporting, I show up with creativity, clarity, and intention. Grounded, kind, and quietly ambitious—that’s how I move. My passion for technology goes beyond development. I aspire to create innovative solutions in the tech repair space. With a focus on customer care, efficiency, and reliability, my goal is to build a bridge between users and technology that ensures every device works seamlessly. I'm constantly learning, adapting, and refining my approach to deliver top-notch repair services that elevate the user experience.</p>
+  <!-- Dynamic About Section -->
+  <section id="about" class="about">
+    <div class="about__visual">
+      <div class="visual__container">
+        <div class="visual__item" data-parallax></div>
+        <div class="visual__item" data-parallax></div>
+      </div>
     </div>
-    
-    <div class="scroll-fade">
-      <h2>What I Do</h2>
-      <p>I specialize in modern full-stack development, from intuitive UIs to efficient backend systems. Whether it's desktop apps, web platforms, or smart systems, I bring ideas to life with code. Beyond development, I also provide expert tech repair services. I strive to deliver solutions that seamlessly integrate technology, focusing on efficiency, reliability, and user satisfaction. Whether it's fixing a device or troubleshooting software, I apply the same meticulous attention to detail to ensure everything works perfectly</p>
+    <div class="about__content">
+      <h2 class="section-title">About <span class="text-highlight">Lesedi</span></h2>
+      <div class="tabs">
+        <div class="tabs__header">
+          <button class="tabs__btn active">Bio</button>
+          <button class="tabs__btn">Skills</button>
+          <button class="tabs__btn">Philosophy</button>
+        </div>
+        <div class="tabs__content">
+          <div class="tabs__panel active">...</div>
+          <div class="tabs__panel">...</div>
+          <div class="tabs__panel">...</div>
+        </div>
+      </div>
     </div>
     
     <div class="scroll-fade">
       <h2>Technologies I Work With</h2>
       <ul>
-        <li>Python (Advanced), JavaScript, HTML/CSS, SQL</li>
-        <li>Django, Flask, React/Vue, Electron</li>
-        <li>SQLite, MySQL, REST API Design</li>
-        <li>Git, GitHub, VS Code, Docker</li>
-        <li>Linux, Shell Scripting, CI/CD</li>
-        <li>Diagnostic Tools & Repair Utilities</li>
-        <li>Hardware Troubleshooting & Component Replacement</li>
+          <li>Electron & SQLite</li>
+          <li>Blazor & ASP.NET Core</li>
+          <li>Entity Framework Core</li>
+          <li>HTML, CSS, JavaScript</li>
+          <li>Diagnostic Tools & Repair Utilities (e.g. BIOS tools, disk imaging, thermal testing)</li>
+          <li>Hardware Troubleshooting & Component Replacement</li>
       </ul>
     </div>
-    
-    <div class="scroll-fade">
-      <p></p>
-      <h2>My Mission</h2>
-      <p>To create solutions that are not just functional, but elegant. I’m passionate about bridging design and development to deliver delightful user experiences.</p>
+  </section>
+
+  <!-- Experimental Contact Form -->
+  <section id="contact" class="contact">
+    <div class="contact__visual">
+      <div class="particles-js" id="contact-particles"></div>
     </div>
-    
+    <form class="contact__form" netlify action="/thank-you.html" method="POST">
+      <h2 class="section-title">Get In <span class="text-highlight">Touch</span></h2>
+      <div class="form__group">
+        <input type="text" id="name" required>
+        <label for="name">Name</label>
+        <div class="focus-line"></div>
+      </div>
+      <!-- More form fields -->
+      <button type="submit" class="btn btn--primary btn--animated">
+        <span>Send Message</span>
+        <svg>...</svg>
+      </button>
+    </form>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 Lesedi Sebekedi. All rights reserved.</p>
+    <p>© 2025 MySite. All rights reserved.</p>
   </footer>
 
+  <script>
+    // Toggle the mobile menu for responsive navigation
+    function toggleMenu() {
+      const navMenu = document.getElementById("navMenu");
+      navMenu.classList.toggle("show");
+    }
+  </script>
 </body>
 </html>
