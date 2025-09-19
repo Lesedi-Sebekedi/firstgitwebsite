@@ -3,7 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Projects - MySite</title>
+  <meta name="description" content="View Lesedi Sebekedi's comprehensive portfolio projects including AssetSphere, IT Asset Tracker, System Information Scripts, E-Commerce Shop, Network Tools, and more built with Python, JavaScript, Django, and modern technologies.">
+  <meta name="keywords" content="projects, portfolio, python, django, javascript, electron, react, system administration, networking, automation, e-commerce, asset management, full stack development">
+  <meta name="author" content="Lesedi Sebekedi">
+  
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#000000">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Lesedi Portfolio">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+
+  <title>Projects - Lesedi Sebekedi</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
   <script src="script.js" defer></script>
@@ -11,12 +23,13 @@
 <body>
   <header>
     <nav>
-      <div class="logo">MySite</div>
+      <div class="logo">Lesedi Sebekedi</div>
       <button class="nav-toggle" aria-controls="navMenu" aria-expanded="false" onclick="toggleMenu()">☰</button>
       <ul class="nav-links" id="navMenu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -30,38 +43,134 @@
 
   <section class="fade-in content">
     <div class="project scroll-fade">
-      <h2>Smart Inventory App</h2>
-      <p>A full-stack inventory management system using Blazor WebAssembly and ASP.NET Core with real-time updates and reporting features.</p>
+      <h2>AssetSphere</h2>
+      <p>Advanced asset management system with comprehensive tracking capabilities. Features include inventory management, asset lifecycle tracking, and reporting dashboards.</p>
       <div class="tech-tags">
-        <span class="tech-tag">Blazor</span>
-        <span class="tech-tag">ASP.NET Core</span>
-        <span class="tech-tag">SQL Server</span>
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">Django</span>
+        <span class="tech-tag">SQLite</span>
+        <span class="tech-tag">Bootstrap</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/Lesedi-Sebekedi/AssetSphere" target="_blank" class="btn btn-secondary">View on GitHub</a>
       </div>
     </div>
     
     <div class="project scroll-fade">
-      <h2>Asset Tracker (Electron)</h2>
-      <p>Cross-platform desktop app for asset tracking, built with Electron and SQLite with barcode scanning capabilities.</p>
+      <h2>IT Asset Tracker (Electron)</h2>
+      <p>Cross-platform desktop app for asset tracking, built with Electron and SQLite with barcode scanning capabilities. Developed during my internship at NW Provincial Treasury.</p>
       <div class="tech-tags">
         <span class="tech-tag">Electron</span>
         <span class="tech-tag">SQLite</span>
         <span class="tech-tag">JavaScript</span>
+        <span class="tech-tag">Asset Management</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/Lesedi-Sebekedi/ITAssetRepo" target="_blank" class="btn btn-secondary">View on GitHub</a>
       </div>
     </div>
     
     <div class="project scroll-fade">
-      <h2>Tech Repair CRM</h2>
-      <p>A modern CRM designed for computer repair businesses, with ticketing, client tracking, and inventory management.</p>
+      <h2>System Information Script</h2>
+      <p>Automated system information collection script that gathers system data, exports to JSON format, and imports into SQL database for analysis and monitoring.</p>
       <div class="tech-tags">
-        <span class="tech-tag">React</span>
-        <span class="tech-tag">Node.js</span>
-        <span class="tech-tag">MongoDB</span>
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">SQL</span>
+        <span class="tech-tag">JSON</span>
+        <span class="tech-tag">System Monitoring</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/Lesedi-Sebekedi/sysinfoScript" target="_blank" class="btn btn-secondary">View on GitHub</a>
+      </div>
+    </div>
+    
+    <div class="project scroll-fade">
+      <h2>E-Commerce Shop</h2>
+      <p>A simple yet functional e-commerce website with product catalog, shopping cart functionality, and user management features.</p>
+      <div class="tech-tags">
+        <span class="tech-tag">HTML</span>
+        <span class="tech-tag">CSS</span>
+        <span class="tech-tag">JavaScript</span>
+        <span class="tech-tag">E-Commerce</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/Lesedi-Sebekedi/sshop" target="_blank" class="btn btn-secondary">View on GitHub</a>
+      </div>
+    </div>
+    
+    <div class="project scroll-fade">
+      <h2>Network Sweeper</h2>
+      <p>Network utility script for checking the reachability of multiple IP addresses. Useful for network monitoring and troubleshooting connectivity issues.</p>
+      <div class="tech-tags">
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">Networking</span>
+        <span class="tech-tag">System Administration</span>
+        <span class="tech-tag">Monitoring</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/Lesedi-Sebekedi/Sweeper" target="_blank" class="btn btn-secondary">View on GitHub</a>
+      </div>
+    </div>
+    
+    <div class="project scroll-fade">
+      <h2>Multi-SSH Manager</h2>
+      <p>SSH connection management tool for handling multiple server connections efficiently. Streamlines remote server administration tasks.</p>
+      <div class="tech-tags">
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">SSH</span>
+        <span class="tech-tag">System Administration</span>
+        <span class="tech-tag">Automation</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/Lesedi-Sebekedi/Multi_SSH" target="_blank" class="btn btn-secondary">View on GitHub</a>
+      </div>
+    </div>
+    
+    <div class="project scroll-fade">
+      <h2>Music Downloader</h2>
+      <p>Automated music downloading utility with support for multiple formats and sources. Built for personal use and learning purposes.</p>
+      <div class="tech-tags">
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">Web Scraping</span>
+        <span class="tech-tag">Media Processing</span>
+        <span class="tech-tag">Automation</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/Lesedi-Sebekedi/music_downloader" target="_blank" class="btn btn-secondary">View on GitHub</a>
+      </div>
+    </div>
+    
+    <div class="project scroll-fade">
+      <h2>NWPT Policies</h2>
+      <p>Intune user policies and configuration management for NW Provincial Treasury. Includes automated policy deployment and user management scripts.</p>
+      <div class="tech-tags">
+        <span class="tech-tag">PowerShell</span>
+        <span class="tech-tag">Intune</span>
+        <span class="tech-tag">Azure AD</span>
+        <span class="tech-tag">Policy Management</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/Lesedi-Sebekedi/NWPTpolicies" target="_blank" class="btn btn-secondary">View on GitHub</a>
+      </div>
+    </div>
+    
+    <div class="project scroll-fade">
+      <h2>KHWANCHA Electrical Batteries</h2>
+      <p>Business website for KHWANCHA Electrical Batteries, showcasing products and services for powering homes and businesses with renewable energy solutions.</p>
+      <div class="tech-tags">
+        <span class="tech-tag">HTML</span>
+        <span class="tech-tag">CSS</span>
+        <span class="tech-tag">JavaScript</span>
+        <span class="tech-tag">Business Website</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/Lesedi-Sebekedi/KHWANCHA-ELECTRICAL-BATTERIES" target="_blank" class="btn btn-secondary">View on GitHub</a>
       </div>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 MySite. All rights reserved.</p>
+    <p>© 2025 Lesedi Sebekedi. All rights reserved.</p>
   </footer>
 </body>
 </html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Lesedi Sebekedi's professional resume - Full Stack Developer with Python expertise, Computer Science background, and IT internship experience.">
+  <meta name="keywords" content="resume, cv, developer, python, javascript, django, react, computer science, IT intern">
+  <meta name="author" content="Lesedi Sebekedi">
+  
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#000000">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Lesedi Portfolio">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+
+  <title>Resume - Lesedi Sebekedi</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Lesedi Sebekedi</div>
+      <button class="nav-toggle" aria-controls="navMenu" aria-expanded="false" onclick="toggleMenu()">☰</button>
+      <ul class="nav-links" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="fade-in">
+    <div class="scroll-fade">
+      <h1>Curriculum Vitae</h1>
+      <p>My professional experience and qualifications</p>
+      <button onclick="downloadPDF()" class="btn">Download PDF CV</button>
+    </div>
+  </section>
+
+  <section class="fade-in content">
+    <div class="scroll-fade">
+      <h2>About Me</h2>
+      <p>Full Stack Developer with strong Python expertise and a foundation in Computer Science & Electronics. Experienced in developing database-driven systems, REST APIs, and frontend interfaces using Python, SQL, JavaScript, and HTML/CSS. Passionate about building scalable, secure, and user-friendly applications. Adaptive team player with a proven record of leadership in tech-for-good and academic projects.</p>
+    </div>
+
+    <div class="scroll-fade">
+      <h2>Contact Information</h2>
+      <div class="contact-info">
+        <div class="contact-item">
+          <strong>Name:</strong> Lesedi Sebekedi
+        </div>
+        <div class="contact-item">
+          <strong>Location:</strong> Makhubung Village, Mahikeng, South Africa
+        </div>
+        <div class="contact-item">
+          <strong>Phone:</strong> <a href="tel:+27679535205">+27 67 953 5205</a>
+        </div>
+        <div class="contact-item">
+          <strong>Email:</strong> <a href="mailto:lesedi.eirenic@gmail.com">lesedi.eirenic@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/lesedisebekedi" target="_blank">linkedin.com/in/lesedisebekedi</a>
+        </div>
+        <div class="contact-item">
+          <strong>GitHub:</strong> <a href="https://github.com/Lesedi-Sebekedi" target="_blank">github.com/Lesedi-Sebekedi</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-fade">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>BSc Computer Science and Electronics</strong> (2021) - Northwest University</li>
+        <li><strong>Matric NQF Level 4</strong> (2017)</li>
+      </ul>
+    </div>
+
+    <div class="scroll-fade">
+      <h2>Professional Experience</h2>
+      <div class="experience-item">
+        <h3>IT Intern – NW Provincial Treasury</h3>
+        <p class="date">Oct 2023 – Present</p>
+        <ul>
+          <li>Developed a custom IT Asset Tracker using JavaScript and SQLite (Electron app)</li>
+          <li>Automated Entra ID (Azure AD) support tasks using scripts</li>
+          <li>Handled software support, tech documentation, and user onboarding</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="scroll-fade">
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Core Development</h3>
+          <ul>
+            <li>Python (advanced)</li>
+            <li>JavaScript</li>
+            <li>HTML/CSS</li>
+            <li>SQL</li>
+            <li>C#</li>
+            <li>Java</li>
+            <li>C++</li>
+          </ul>
+        </div>
+        
+        <div class="skill-category">
+          <h3>Frameworks & Tools</h3>
+          <ul>
+            <li>Django, Flask</li>
+            <li>React/Vue</li>
+            <li>Git, GitHub</li>
+            <li>VS Code, Postman</li>
+            <li>Docker</li>
+          </ul>
+        </div>
+        
+        <div class="skill-category">
+          <h3>Backend & Database</h3>
+          <ul>
+            <li>Django ORM</li>
+            <li>REST API design</li>
+            <li>MySQL, SQLite</li>
+            <li>Authentication systems</li>
+            <li>CRUD operations</li>
+            <li>DB schema design</li>
+          </ul>
+        </div>
+        
+        <div class="skill-category">
+          <h3>Frontend</h3>
+          <ul>
+            <li>HTML5, CSS3</li>
+            <li>Bootstrap/Tailwind</li>
+            <li>JS DOM manipulation</li>
+            <li>React/Vue understanding</li>
+          </ul>
+        </div>
+        
+        <div class="skill-category">
+          <h3>Deployment & DevOps</h3>
+          <ul>
+            <li>Linux command line</li>
+            <li>Shell scripting</li>
+            <li>Basic Docker</li>
+            <li>CI/CD (GitHub Actions)</li>
+          </ul>
+        </div>
+        
+        <div class="skill-category">
+          <h3>Security</h3>
+          <ul>
+            <li>Nmap</li>
+            <li>Network simulation</li>
+            <li>Endpoint protection</li>
+            <li>Cybersecurity certifications (available on request)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-fade">
+      <h2>Awards & Achievements</h2>
+      <ul>
+        <li>PostgreSQL/SQL mastery</li>
+        <li>JavaScript frameworks</li>
+        <li>Django/FastAPI</li>
+      </ul>
+    </div>
+
+    <div class="scroll-fade">
+      <h2>References</h2>
+      <div class="references">
+        <div class="reference">
+          <h3>Ms Katiego Motaung</h3>
+          <p>NWPT Supervisor</p>
+          <p>Email: <a href="mailto:katiegom@nwpg.gov.za">katiegom@nwpg.gov.za</a></p>
+          <p>Tel: 018 388 5646</p>
+        </div>
+        
+        <div class="reference">
+          <h3>Dr Francis Lugayizi</h3>
+          <p>Subject Group Leader and Senior Lecturer</p>
+          <p>Department of Computer Science, Northwest University</p>
+          <p>Email: <a href="mailto:Francis.lugayizi@nwu.ac.za">Francis.lugayizi@nwu.ac.za</a></p>
+          <p>Tel: 0183892623 | Cell: 0761011270</p>
+        </div>
+        
+        <div class="reference">
+          <h3>Reorapetse Molose</h3>
+          <p>Department of Computer Science</p>
+          <p>Faculty of Natural and Agricultural Sciences, Northwest University</p>
+          <p>Cell: 084 307 9782</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Lesedi Sebekedi. All rights reserved.</p>
+  </footer>
+</body>
+</html>
