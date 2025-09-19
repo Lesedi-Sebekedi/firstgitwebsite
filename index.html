@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About Me - MySite</title>
+  <title>Lesedi Sebekedi - Full Stack Developer & Tech Repair Specialist</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
   <script src="script.js" defer></script>
@@ -12,59 +12,32 @@
   <!-- Header & Navigation -->
   <header>
     <nav>
-      <div class="logo">MySite</div>
-      <div class="nav-toggle" onclick="toggleMenu()">☰</div>
+      <div class="logo">Lesedi Sebekedi</div>
+      <button class="nav-toggle" aria-controls="navMenu" aria-expanded="false" onclick="toggleMenu()">☰</button>
       <ul class="nav-links" id="navMenu">
         <li><a href="index.html">Home</a></li>
         <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Immersive Hero Section -->
-  <section id="home" class="hero xyz-in" xyz="fade down-2 stagger-1">
-    <canvas id="hero-canvas"></canvas>
-    <div class="hero__content">
-      <h1 class="hero__title">
-        <span class="text-stroke">Digital</span>
-        <span class="text-gradient">Alchemy</span>
-      </h1>
-      <p class="hero__subtitle">Transforming complex problems into elegant solutions</p>
-      <div class="hero__cta">
-        <button class="btn btn--primary" data-hover-effect>View Portfolio</button>
-        <button class="btn btn--secondary" data-hover-effect>Contact Me</button>
-      </div>
-    </div>
-    <div class="hero__scroll-indicator">
-      <span>Scroll</span>
-      <div class="scroll-arrow"></div>
+  <!-- Hero Section -->
+  <section id="home" class="hero fade-in">
+    <h1>Lesedi Sebekedi</h1>
+    <p>Full Stack Developer & Tech Repair Specialist</p>
+    <p>Transforming complex problems into elegant solutions</p>
+    <div class="hero__cta">
+      <a href="projects.html" class="btn btn--primary">View Portfolio</a>
+      <a href="contact.html" class="btn btn--secondary">Contact Me</a>
     </div>
   </section>
 
-  <!-- Dynamic About Section -->
-  <section id="about" class="about">
-    <div class="about__visual">
-      <div class="visual__container">
-        <div class="visual__item" data-parallax></div>
-        <div class="visual__item" data-parallax></div>
-      </div>
-    </div>
-    <div class="about__content">
-      <h2 class="section-title">About <span class="text-highlight">Lesedi</span></h2>
-      <div class="tabs">
-        <div class="tabs__header">
-          <button class="tabs__btn active">Bio</button>
-          <button class="tabs__btn">Skills</button>
-          <button class="tabs__btn">Philosophy</button>
-        </div>
-        <div class="tabs__content">
-          <div class="tabs__panel active">...</div>
-          <div class="tabs__panel">...</div>
-          <div class="tabs__panel">...</div>
-        </div>
-      </div>
-    </div>
+  <!-- About Section -->
+  <section id="about" class="about fade-in content">
+    <h2>About Lesedi</h2>
+    <p>I'm a passionate Full Stack Developer and Tech Repair Specialist based in Makhubung Village, Mahikeng. With expertise in both software development and hardware troubleshooting, I bring a unique perspective to solving complex technical challenges.</p>
     
     <div class="scroll-fade">
       <h2>Technologies I Work With</h2>
@@ -77,39 +50,44 @@
           <li>Hardware Troubleshooting & Component Replacement</li>
       </ul>
     </div>
+    
+    <div class="scroll-fade">
+      <h2>My Mission</h2>
+      <p>To create solutions that are not just functional, but elegant. I'm passionate about bridging design and development to deliver delightful user experiences.</p>
+    </div>
   </section>
 
-  <!-- Experimental Contact Form -->
-  <section id="contact" class="contact">
-    <div class="contact__visual">
-      <div class="particles-js" id="contact-particles"></div>
-    </div>
-    <form class="contact__form" netlify action="/thank-you.html" method="POST">
-      <h2 class="section-title">Get In <span class="text-highlight">Touch</span></h2>
-      <div class="form__group">
-        <input type="text" id="name" required>
-        <label for="name">Name</label>
-        <div class="focus-line"></div>
-      </div>
-      <!-- More form fields -->
-      <button type="submit" class="btn btn--primary btn--animated">
-        <span>Send Message</span>
-        <svg>...</svg>
-      </button>
+  <!-- Contact Section -->
+  <section id="contact" class="contact fade-in content">
+    <h2>Get In Touch</h2>
+    <p>Feel free to reach out for collaboration, consulting, or just to say hi.</p>
+    
+    <form id="contactForm">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required />
+      <span id="nameError" class="error-message"></span>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+      <span id="emailError" class="error-message"></span>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <span id="messageError" class="error-message"></span>
+
+      <button type="submit" class="btn">Send</button>
     </form>
+    
+    <div id="successMessage" class="success-message" style="display: none;">
+      <h3>Thank you!</h3>
+      <p>Your message has been sent successfully. I'll get back to you soon!</p>
+    </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 MySite. All rights reserved.</p>
+    <p>© 2025 Lesedi Sebekedi. All rights reserved.</p>
   </footer>
 
-  <script>
-    // Toggle the mobile menu for responsive navigation
-    function toggleMenu() {
-      const navMenu = document.getElementById("navMenu");
-      navMenu.classList.toggle("show");
-    }
-  </script>
 </body>
 </html>
